@@ -1,0 +1,117 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.about-me-title {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-me-title::after {
+  content: "";
+  display: block;
+  background-color: #faf9db;
+  height: 2px;
+  flex: 1;
+}
+
+.about-me-description {
+  margin-top: 1.5rem;
+  margin-left: 2%;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  flex: 1;
+}
+
+.highlight {
+  color: #ff4433;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+}
+
+.tech-item i {
+  font-size: 2rem;
+}
+
+.carousel-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 100s infinite linear;
+  padding: 1em;
+}
+
+.card {
+  flex: 0 0 5em;
+  height: 15rem;
+  background: cornflowerblue;
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
