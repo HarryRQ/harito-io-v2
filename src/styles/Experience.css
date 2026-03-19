@@ -1,0 +1,131 @@
+.experience {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+}
+
+.experience-shape {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  width: 400px;
+  z-index: 0;
+}
+
+.experience-title {
+  position: relative;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+  z-index: 1;
+}
+
+.experience-title::after {
+  content: "";
+  display: block;
+  background-color: #faf9db;
+  height: 2px;
+  flex: 1;
+}
+
+.experience-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  gap: 2rem;
+  flex: 1;
+  z-index: 1;
+}
+
+.experience-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+.sidebar-item {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #faf9db;
+  opacity: 0.5;
+  font-weight: 500;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+  opacity: 0.8;
+  border-left: 2px solid #faf9db;
+}
+
+.sidebar-item.active {
+  color: #ff4433;
+  opacity: 1;
+  border-left: 2px solid #ff4433;
+}
+
+.experience-details {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.experience-details h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #ff4433;
+}
+
+.experience-date {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.experience-bullets {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.experience-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.experience-bullets li::before {
+  content: "▷";
+  color: #ff4433;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tech-item i {
+  font-size: 2rem;
+}
