@@ -53,42 +53,42 @@ export default function AboutMe() {
           <div className="carousel">
             <div className="group">
               <div className="card">
-                <img src={wine_window} />
+                <img src={wine_window} alt="wine window in italy" />
               </div>
               <div className="card">
-                <img src={volcano_guate} />
+                <img src={volcano_guate} alt="volcano in guatemala" />
               </div>
               <div className="card">
-                <img src={palma} />
+                <img src={palma} alt="palm tree in puerto rico" />
               </div>
               <div className="card">
-                <img src={italy} />
+                <img src={italy} alt="Piazzale Michelangelo" />
               </div>
               <div className="card">
-                <img src={store} />
+                <img src={store} alt="store in italy" />
               </div>
               <div className="card">
-                <img src={clouds} />
+                <img src={clouds} alt="Fuego volcano summit in guatemala" />
               </div>
             </div>
             <div aria-hidden className="group">
               <div className="card">
-                <img src={wine_window} />
+                <img src={wine_window} alt="wine window in italy" />
               </div>
               <div className="card">
-                <img src={volcano_guate} />
+                <img src={volcano_guate} alt="volcano in guatemala" />
               </div>
               <div className="card">
-                <img src={palma} />
+                <img src={palma} alt="palm tree in puerto rico" />
               </div>
               <div className="card">
-                <img src={italy} />
+                <img src={italy} alt="Piazzale Michelangelo" />
               </div>
               <div className="card">
-                <img src={store} />
+                <img src={store} alt="store in italy" />
               </div>
               <div className="card">
-                <img src={clouds} />
+                <img src={clouds} alt="Fuego volcano summit in guatemala" />
               </div>
             </div>
           </div>

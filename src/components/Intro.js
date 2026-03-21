@@ -16,7 +16,7 @@ export default function Intro() {
         </div>
         <div className="burst">
           <img src={burst} alt="burst shape" />
-          <img src={mePic} alt="pic of myself" />
+          <img src={mePic} alt="this is me" />
         </div>
       </div>
       <div>
