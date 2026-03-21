@@ -53,42 +53,42 @@ export default function AboutMe() {
           <div className="carousel">
             <div className="group">
               <div className="card">
-                <img src={wine_window} alt="wine window" />
+                <img src={wine_window} />
               </div>
               <div className="card">
-                <img src={volcano_guate} alt="volcano in guatemala" />
+                <img src={volcano_guate} />
               </div>
               <div className="card">
-                <img src={palma} alt="puerto rico palm tree" />
+                <img src={palma} />
               </div>
               <div className="card">
-                <img src={italy} alt="Piazzale Michelangelo" />
+                <img src={italy} />
               </div>
               <div className="card">
-                <img src={store} alt="store in italy" />
+                <img src={store} />
               </div>
               <div className="card">
-                <img src={clouds} alt="summit of fuego in guatemala" />
+                <img src={clouds} />
               </div>
             </div>
             <div aria-hidden className="group">
               <div className="card">
-                <img src={wine_window} alt="wine window" />
+                <img src={wine_window} />
               </div>
               <div className="card">
-                <img src={volcano_guate} alt="volcano in guatemala" />
+                <img src={volcano_guate} />
               </div>
               <div className="card">
-                <img src={palma} alt="puerto rico palm tree" />
+                <img src={palma} />
               </div>
               <div className="card">
-                <img src={italy} alt="Piazzale Michelangelo" />
+                <img src={italy} />
               </div>
               <div className="card">
-                <img src={store} alt="store in italy" />
+                <img src={store} />
               </div>
               <div className="card">
-                <img src={clouds} alt="Fuego summit in guatemala" />
+                <img src={clouds} />
               </div>
             </div>
           </div>
