@@ -1,9 +1,13 @@
+:root {
+  --font-display: "Luckiest Guy", cursive;
+  --font-body: "DM Sans", sans-serif;
+}
+
 body {
-  background-color: #fbecd7;
+  background-color: #1c2d1a;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  color: #faf9db;
+  font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
