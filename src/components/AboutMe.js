@@ -1,10 +1,26 @@
 import "../styles/AboutMe.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+
 import store from "../assets/store.jpeg";
 import volcano_guate from "../assets/volcano_guatemala.jpeg";
 import wine_window from "../assets/wine_window.jpeg";
 import palma from "../assets/palma.JPG";
 import italy from "../assets/italy.jpeg";
 import clouds from "../assets/clouds.jpeg";
+
+const photos = [
+  { src: wine_window, alt: "wine window in italy" },
+  { src: volcano_guate, alt: "volcano in guatemala" },
+  { src: palma, alt: "palm tree in puerto rico" },
+  { src: italy, alt: "Piazzale Michelangelo" },
+  { src: store, alt: "store in italy" },
+  { src: clouds, alt: "Fuego volcano summit in guatemala" },
+];
+
+const isMobile = window.innerWidth < 768;
 
 export default function AboutMe() {
   return (
@@ -50,48 +66,21 @@ export default function AboutMe() {
           <p>Here are some of my recent pictures!</p>
         </div>
         <div className="carousel-container">
-          <div className="carousel">
-            <div className="group">
-              <div className="card">
-                <img src={wine_window} alt="wine window in italy" />
-              </div>
-              <div className="card">
-                <img src={volcano_guate} alt="volcano in guatemala" />
-              </div>
-              <div className="card">
-                <img src={palma} alt="palm tree in puerto rico" />
-              </div>
-              <div className="card">
-                <img src={italy} alt="Piazzale Michelangelo" />
-              </div>
-              <div className="card">
-                <img src={store} alt="store in italy" />
-              </div>
-              <div className="card">
-                <img src={clouds} alt="Fuego volcano summit in guatemala" />
-              </div>
-            </div>
-            <div aria-hidden className="group">
-              <div className="card">
-                <img src={wine_window} alt="wine window in italy" />
-              </div>
-              <div className="card">
-                <img src={volcano_guate} alt="volcano in guatemala" />
-              </div>
-              <div className="card">
-                <img src={palma} alt="palm tree in puerto rico" />
-              </div>
-              <div className="card">
-                <img src={italy} alt="Piazzale Michelangelo" />
-              </div>
-              <div className="card">
-                <img src={store} alt="store in italy" />
-              </div>
-              <div className="card">
-                <img src={clouds} alt="Fuego volcano summit in guatemala" />
-              </div>
-            </div>
-          </div>
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={16}
+            slidesPerView={1.5}
+            centeredSlides={true}
+            loop={true}
+            pagination={isMobile ? false : { clickable: true }}
+            className="photo-swiper"
+          >
+            {photos.map((photo, index) => (
+              <SwiperSlide key={index}>
+                <img src={photo.src} alt={photo.alt} className="swiper-photo" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

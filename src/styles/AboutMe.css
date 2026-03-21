@@ -53,6 +53,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .tech-item {
@@ -69,55 +70,22 @@
 
 .carousel-container {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  margin-top: 1rem;
 }
 
-.carousel {
+.swiper-slide {
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-active {
+  transform: scale(1.05);
+}
+
+.swiper-photo {
   width: 100%;
-  display: flex;
-  overflow-x: hidden;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  animation: spin 30s infinite linear;
-  padding: 1em;
-}
-
-.card {
-  flex: 0 0 7em;
-  height: 10em;
-  font-size: 2rem;
-  border-radius: 0.5em;
-  text-align: center;
-  align-content: center;
-}
-
-.card img {
-  width: 100%;
-  height: 100%;
+  height: 350px;
   object-fit: cover;
   border-radius: 0.5rem;
-}
-
-@keyframes spin {
-  from {
-    translate: 0;
-  }
-  to {
-    translate: -100%;
-  }
 }
 
 /* ── TABLET (768px and up) ── */
@@ -143,21 +111,23 @@
     flex: 1;
     margin-top: 0;
   }
-}
 
-/* ── DESKTOP (1024px and up) ── */
-@media (min-width: 1024px) {
-  .about-me-title {
-    width: 40%;
+  .swiper-photo {
+    height: 400px;
   }
 
-  .about-me-description {
-    font-size: 1.25rem;
-    line-height: 1.8;
+  .photo-swiper {
+    padding-bottom: 2.5rem;
   }
 
-  .tech-item i {
-    font-size: 3rem;
+  .swiper-pagination-bullet {
+    background: #faf9db;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #ff4433;
+    opacity: 1;
   }
 }
 
@@ -165,5 +135,9 @@
 @media (min-width: 1440px) {
   .about-me-description {
     font-size: 1.4rem;
+  }
+
+  .swiper-photo {
+    height: 500px;
   }
 }
