@@ -3,7 +3,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/EmailOutlined";
 import mePic from "../assets/me.png";
-import arcbeanie from "../assets/arc_beanie.jpg";
 import burst from "../assets/Shape_1.png";
 import flower from "../assets/Shape_2.png";
 import softBurst from "../assets/Shape_3.png";
