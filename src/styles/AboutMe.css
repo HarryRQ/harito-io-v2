@@ -1,26 +1,20 @@
+/* ── MOBILE (default) ── */
 .about-me {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 2rem;
+  padding: 2rem 1rem;
   min-height: 100vh;
 }
 
 .about-me-title {
   font-family: "Luckiest Guy", cursive;
   font-size: 2rem;
-  margin-left: 2%;
+  margin-left: 0;
   display: flex;
   align-items: center;
   gap: 1rem;
-  width: 40%;
-}
-
-.about-me-content {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  align-items: center;
+  width: 100%;
 }
 
 .about-me-title::after {
@@ -31,12 +25,23 @@
   flex: 1;
 }
 
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
 .about-me-description {
-  margin-top: 1.5rem;
-  margin-left: 2%;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  flex: 1;
+  margin-top: 1rem;
+  margin-left: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  width: 100%;
+}
+
+.about-me-description p {
+  margin-bottom: 1.25rem;
 }
 
 .highlight {
@@ -46,8 +51,8 @@
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .tech-item {
@@ -59,16 +64,16 @@
 }
 
 .tech-item i {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .carousel-container {
-  flex: 1;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .carousel {
@@ -86,16 +91,15 @@
   align-items: center;
   justify-content: center;
   gap: 1em;
-  animation: spin 100s infinite linear;
+  animation: spin 30s infinite linear;
   padding: 1em;
 }
 
 .card {
-  flex: 0 0 5em;
-  height: 15rem;
-  background: cornflowerblue;
-  font-size: 3rem;
-  border-radius: 0.2em;
+  flex: 0 0 7em;
+  height: 10em;
+  font-size: 2rem;
+  border-radius: 0.5em;
   text-align: center;
   align-content: center;
 }
@@ -104,7 +108,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 @keyframes spin {
@@ -113,5 +117,53 @@
   }
   to {
     translate: -100%;
+  }
+}
+
+/* ── TABLET (768px and up) ── */
+@media (min-width: 768px) {
+  .about-me-title {
+    width: 60%;
+    margin-left: 2%;
+  }
+
+  .about-me-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-me-description {
+    font-size: 1.1rem;
+    margin-left: 2%;
+    flex: 1;
+  }
+
+  .carousel-container {
+    flex: 1;
+    margin-top: 0;
+  }
+}
+
+/* ── DESKTOP (1024px and up) ── */
+@media (min-width: 1024px) {
+  .about-me-title {
+    width: 40%;
+  }
+
+  .about-me-description {
+    font-size: 1.25rem;
+    line-height: 1.8;
+  }
+
+  .tech-item i {
+    font-size: 3rem;
+  }
+}
+
+/* ── LARGE DESKTOP (1440px and up) ── */
+@media (min-width: 1440px) {
+  .about-me-description {
+    font-size: 1.4rem;
   }
 }

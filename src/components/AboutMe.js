@@ -1,5 +1,10 @@
 import "../styles/AboutMe.css";
-import mePic from "../assets/me.png";
+import store from "../assets/store.jpeg";
+import volcano_guate from "../assets/volcano_guatemala.jpeg";
+import wine_window from "../assets/wine_window.jpeg";
+import palma from "../assets/palma.JPG";
+import italy from "../assets/italy.jpeg";
+import clouds from "../assets/clouds.jpeg";
 
 export default function AboutMe() {
   return (
@@ -48,21 +53,43 @@ export default function AboutMe() {
           <div className="carousel">
             <div className="group">
               <div className="card">
-                <img src={mePic} />
+                <img src={wine_window} />
               </div>
-              <div className="card">2</div>
-              <div className="card">3</div>
-              <div className="card">4</div>
-              <div className="card">5</div>
-              <div className="card">6</div>
+              <div className="card">
+                <img src={volcano_guate} />
+              </div>
+              <div className="card">
+                <img src={palma} />
+              </div>
+              <div className="card">
+                <img src={italy} />
+              </div>
+              <div className="card">
+                <img src={store} />
+              </div>
+              <div className="card">
+                <img src={clouds} />
+              </div>
             </div>
             <div aria-hidden className="group">
-              <div className="card">1</div>
-              <div className="card">2</div>
-              <div className="card">3</div>
-              <div className="card">4</div>
-              <div className="card">5</div>
-              <div className="card">6</div>
+              <div className="card">
+                <img src={wine_window} />
+              </div>
+              <div className="card">
+                <img src={volcano_guate} />
+              </div>
+              <div className="card">
+                <img src={palma} />
+              </div>
+              <div className="card">
+                <img src={italy} />
+              </div>
+              <div className="card">
+                <img src={store} />
+              </div>
+              <div className="card">
+                <img src={clouds} />
+              </div>
             </div>
           </div>
         </div>
