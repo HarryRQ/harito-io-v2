@@ -58,7 +58,7 @@ export default function Intro() {
         </ul>
       </div>
       <div className="flower">
-        <img src={flower} />
+        <img src={flower} alt="flower shape" />
       </div>
     </div>
   );
