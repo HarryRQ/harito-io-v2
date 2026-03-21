@@ -1,26 +1,172 @@
-.circle {
+/* ── DESKTOP (default) ── */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.intro p {
+  margin: 2rem auto;
+  max-width: 700px;
+  font-size: 1.25rem;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.soft-burst {
   position: absolute;
   top: 20px;
-  left: -100px;
-  width: 300px; /* same width and height */
-  height: 300px;
-  background-color: #ec110f; /* or any color */
-  border-radius: 50%; /* makes it a circle */
+  right: 12%;
 }
 
-.lines {
+.flower {
   position: absolute;
-  right: 10%;
-  top: 17%;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  transform: rotate(-38deg);
+  bottom: 20px;
+  right: 7%;
 }
 
-.lines div {
-  width: 400px;
-  height: 3px;
-  background-color: #ec110f;
-  border-radius: 5%;
+.burst {
+  position: absolute;
+  top: 2%;
+  left: -1%;
+  margin-top: 2%;
+}
+
+.burst img:first-child {
+  height: 450px;
+  object-fit: contain;
+}
+
+.burst img:last-child {
+  position: absolute;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 65%;
+}
+
+.socials-container {
+  color: #faf9db;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.socials-container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.socials-container a {
+  color: inherit;
+}
+
+.socials-container li {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.socials-container li.LinkedIn:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+}
+
+.socials-container li.Instagram:hover {
+  color: #e1306c;
+  transform: scale(1.2);
+}
+
+.socials-container li.Email:hover {
+  color: #ff4433;
+  transform: scale(1.2);
+}
+
+/* ── MOBILE (767px and below) ── */
+@media (max-width: 767px) {
+  .intro {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+
+  .intro h2 {
+    font-size: 1.2rem;
+  }
+
+  .burst {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .burst img:first-child {
+    height: 250px;
+  }
+
+  .soft-burst {
+    display: none;
+  }
+
+  .flower {
+    display: none;
+  }
+
+  .socials-container {
+    width: 80%;
+  }
+}
+
+/* ── TABLET (768px to 1023px) ── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+
+  .burst img:first-child {
+    height: 350px;
+  }
 }
