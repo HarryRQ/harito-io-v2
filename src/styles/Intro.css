@@ -153,6 +153,10 @@
   .socials-container {
     width: 80%;
   }
+
+  .socials-container li {
+    color: #ff4433;
+  }
 }
 
 /* ── TABLET (768px to 1023px) ── */
