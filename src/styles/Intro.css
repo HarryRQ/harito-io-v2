@@ -173,4 +173,8 @@
   .burst img:first-child {
     height: 350px;
   }
+
+  .socials-container li {
+    color: #ff4433;
+  }
 }
